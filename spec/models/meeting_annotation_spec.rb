@@ -71,4 +71,6 @@ describe MeetingAnnotation do
 
     it { should be_nil }
   end
+
+
 end

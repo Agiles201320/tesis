@@ -86,4 +86,11 @@ describe Student do
     it { should_not be_valid }
   end
 
+  # ============
+  # Test for real age
+  # ============
+  describe 'age should be less than one hundred and twenty' do
+    before { student.age = 120}
+    it { should_not be_valid }
+  end
 end

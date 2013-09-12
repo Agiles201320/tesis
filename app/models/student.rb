@@ -24,7 +24,8 @@ class Student < ActiveRecord::Base
   # ============
   # Validations
   # ============
-  validates :age, presence: true, numericality: { greater_than: 0 }
+  validates :age, presence: true, numericality: { greater_than: 0}
+  validates :age, presence: true, numericality: { less_than: 120}
   validates :major, presence: true
   validates :name, presence: true, length: { maximum: 200 }
   validates :student_code, presence: true
